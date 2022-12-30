@@ -18,8 +18,8 @@ jobs:
       - uses: sparkfabrik/ios-build-action@v2.0.0
         with:
           increment-build-number: true
-          build-pods: true
-          pods-path: './Podfile'
+          build-pods: false
+          pods-path: './Pods'
           configuration: Release
           export-method: ad-hoc
           workspace-path: './WristPlayer.xcworkspace'
