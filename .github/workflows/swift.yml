@@ -15,16 +15,16 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: sparkfabrik/ios-build-action@v2.0.0
-  with:
-    increment-build-number: true
-    build-pods: true
-    pods-path: 'Podfile'
-    configuration: Release
-    export-method: ad-hoc
-    workspace-path: 'WristPlayer.xcworkspace'
-    project-path: 'WristPlayer.xcodeproj'
-    scheme: WristPlayer
-    output-path: build-man.ipa
-    team-id: E7PYUL633W
-    team-name: zeph0n
+      - uses: sparkfabrik/ios-build-action@v2.0.0
+        with:
+          increment-build-number: true
+          build-pods: true
+          pods-path: 'Podfile'
+          configuration: Release
+          export-method: ad-hoc
+          workspace-path: 'WristPlayer.xcworkspace'
+          project-path: 'WristPlayer.xcodeproj'
+          scheme: WristPlayer
+          output-path: build-man.ipa
+          team-id: E7PYUL633W
+          team-name: zeph0n
