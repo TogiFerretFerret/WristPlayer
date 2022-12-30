@@ -19,6 +19,3 @@ jobs:
       - run: xcodebuild -project WristPlayer.xcodeproj -scheme WristPlayer -archivePath YourApp.xcarchive archive
         with:
           xcode-version: latest-stable
-      - run: xcodebuild -exportArchive -archivePath YourApp.xcarchive -exportPath / -exportOptionsPlist /Path/ExportOptions.plist
-        with:
-          xcode-version: latest-stable
