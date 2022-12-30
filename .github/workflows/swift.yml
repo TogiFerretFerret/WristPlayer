@@ -15,4 +15,4 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - run sudo gem install cocoapods
+      - run: sudo gem install cocoapods
