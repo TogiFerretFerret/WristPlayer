@@ -16,5 +16,5 @@ jobs:
 
     steps:
       - run: sudo gem install cocoapods
-      - run: xcodebuild -project WristPlayer.xcodeproj -scheme WristPlayer -archivePath YourApp.xcarchive archive
-      - run: xcodebuild -exportArchive -archivePath YourApp.xcarchive -exportPath / -exportOptionsPlist /ExportOptions.plist
+      - run: xcodebuild -project ./WristPlayer.xcodeproj -scheme WristPlayer -archivePath ./YourApp.xcarchive archive
+      - run: xcodebuild -exportArchive -archivePath ./YourApp.xcarchive -exportPath ./ -exportOptionsPlist ./ExportOptions.plist
