@@ -19,11 +19,11 @@ jobs:
         with:
           increment-build-number: true
           build-pods: true
-          pods-path: '~/Podfile'
+          pods-path: '../Podfile'
           configuration: Release
           export-method: ad-hoc
-          workspace-path: 'WristPlayer.xcworkspace'
-          project-path: 'WristPlayer.xcodeproj'
+          workspace-path: '../WristPlayer.xcworkspace'
+          project-path: '../WristPlayer.xcodeproj'
           scheme: WristPlayer
           output-path: build-man.ipa
           team-id: E7PYUL633W
