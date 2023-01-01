@@ -15,6 +15,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - run: sudo gem install cocoapods
       - run: xcodebuild -project ./WristPlayer.xcodeproj -scheme WristPlayer -archivePath ./YourApp.xcarchive archive
       - run: xcodebuild -exportArchive -archivePath ./YourApp.xcarchive -exportPath ./ -exportOptionsPlist ./ExportOptions.plist
